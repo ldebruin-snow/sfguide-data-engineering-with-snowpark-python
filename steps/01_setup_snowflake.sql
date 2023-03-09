@@ -1,21 +1,4 @@
-/*-----------------------------------------------------------------------------
-Hands-On Lab: Data Engineering with Snowpark
-Script:       01_setup_snowflake.sql
-Author:       Jeremiah Hansen
-Last Updated: 1/1/2023
------------------------------------------------------------------------------*/
 
-
--- ----------------------------------------------------------------------------
--- Step #1: Accept Anaconda Terms & Conditions
--- ----------------------------------------------------------------------------
-
--- See Getting Started section in Third-Party Packages (https://docs.snowflake.com/en/developer-guide/udf/python/udf-python-packages.html#getting-started)
-
-
--- ----------------------------------------------------------------------------
--- Step #2: Create the account level objects
--- ----------------------------------------------------------------------------
 USE ROLE ACCOUNTADMIN;
 
 -- Roles
@@ -70,6 +53,7 @@ USE SCHEMA ANALYTICS;
 --$$
 --    (temp_f - 32) * (5/9)
 --$$;
+SELECT * FROM ANALYTICS.DAILY_CITY_METRICS;
 
 CREATE OR REPLACE FUNCTION ANALYTICS.INCH_TO_MILLIMETER_UDF(INCH NUMBER(35,4))
 RETURNS NUMBER(35,4)
