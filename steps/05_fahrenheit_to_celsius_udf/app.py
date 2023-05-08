@@ -15,8 +15,8 @@ from scipy.constants import convert_temperature
 def main(temp_f: float) -> float:
     return convert_temperature(float(temp_f), 'F', 'C')
 
-##comment thia eresolves 123
-# For local debugging
+##comment this resolves issue 123
+
 # Be aware you may need to type-convert arguments if you add input parameters
 if __name__ == '__main__':
     if len(sys.argv) > 1:
