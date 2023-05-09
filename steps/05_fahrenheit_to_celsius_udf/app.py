@@ -16,6 +16,7 @@ def main(temp_f: float) -> float:
     return convert_temperature(float(temp_f), 'F', 'C')
 
 ##comment this resolves issue 123
+##comment to resolve this bug 1234
 
 # Be aware you may need to type-convert arguments if you add input parameters
 if __name__ == '__main__':
