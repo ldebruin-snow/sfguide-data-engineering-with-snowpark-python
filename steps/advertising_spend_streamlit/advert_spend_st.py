@@ -8,8 +8,9 @@ from snowflake.snowpark.context import get_active_session
 from snowflake.snowpark.functions import col
 import streamlit as st
 
-
+#fixing git
 # Function to create Snowflake Session to connect to Snowflake
+#
 
 # Function to load last six months' budget allocations and ROI 
 @st.experimental_memo(show_spinner=False)
