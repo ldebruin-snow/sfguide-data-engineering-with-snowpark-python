@@ -1,0 +1,8 @@
+snowsql_config_path = "/Users/ldebruin/.snowsql/config"
+snowsql_connection_name = "dev"
+
+[dev]
+database = "DEMO"
+schema = "ADVERTISING_ROI_STREAMLIT"
+role = "DBA_CITIBIKE"
+warehouse = "COMPUTE_WH"
